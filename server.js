@@ -34,8 +34,8 @@ cors_proxy.createServer({
   },
   // Adicione os cabeçalhos origin e referer para disneyplus.com
   handleInitialRequest: function(req, res, proxyOptions) {
-    req.headers['origin'] = 'https://www.clarotv.com.br';
-    req.headers['referer'] = 'https://www.clarotv.com.br';
+    req.headers['origin'] = 'https://www.clarotvmais.com.br';
+    req.headers['referer'] = 'https://www.clarotvmais.com.br';
     return false; // Continuar com a solicitação normal
   },
 }).listen(port, host, function() {
